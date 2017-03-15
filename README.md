@@ -50,6 +50,6 @@ Cellular nuclear marker are widely used to identify ... (show picture)
 
 
 
-![Screenshot](screenshot.png)
+![Screenshot](IMG/HCI_example2.png)
 
 plot((1:100))
