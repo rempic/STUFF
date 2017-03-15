@@ -1,5 +1,4 @@
-# TEST_GIT
-Itroduce the subject (a machine learning platform for drug and genetic phenotypic screen)
+# A machine learning platform for drug and genetic phenotypic screen
 
 Why is importatnt ?
 
@@ -9,6 +8,8 @@ HOW TO DO IT?
 
 1. Image acquisition, preparation (change name), remove background, etc.... To use images from High content acquisition fo whole slide.
    For the whole slide acquisition I will use OpenSlide library to devide a big acquired area in tails at different magnification.
+   
+   for this section I will just add a picture of the entire HCI divided in tiles
    
 2. Image segmentation to measure the features related to single cells and and multiple cells in different contexts (mitotic cells, cells at the edge, intercellular distance, cellur compaction, neighbouring cells, etc...). I use tassellation of the entire cell population from nuclear segmentation. I use a KD-tree data structure to have an efficient retrieval (log) and spatial retivial of the  the segmented tassellation (voronoi diagram)  
 
