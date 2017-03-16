@@ -46,13 +46,10 @@ The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial info
 
 ## Data/features extraction from  tassellated images
 
-The goal of this module of the software is to extrat defined data features from the tassellated image acquisitions. The list of the features/attributes measured is shown below (table 1). For this  prototype of the software I used high-content images of  two different channels related to two molecule of interests acquired from cells under a specific drug treatment. The molecule of interests are DNA and a protein  for which I do not give the name and will call for brevity protein-1. Images of the DNA was used for image segmentation and determien the cellular tassellation (see previous section), and also  to measure features related to nuclear morphology. Protein 1 localizes into the nucleus when activated (phosphorilated) and is used in this prototype of the software to show teh importance of  including data about the cellular context, e,g, cell confinement, to accuratly  quantificatify the phenotypic effect of a drug on cells. 
+The goal of this module is to extrat from the tassellated image acquisitions the data features which will be used for the classification module (see machine learning) and for the final statistical analysis. The list of the features/attributes measured is shown below (table 1). For this  software prototype I used a two channels (two colours) high-content image acquisitions of two molecule of interests: DNA and a protein which I call protein-1. the DNA channel was used for cell segmentation the voronoi diagram (see  previous section), and to measure features related to nuclear morphology and other information (see machine learning section). I choose the Protein-1 because it localizes into the nucleus when is  active (phosphorilation) and therfore is a good example of the drug screen phenotypic readout.  used in this prototype of the software to show teh importance of  including data about the cellular context, e,g, cell confinement, to accuratly  quantificatify the phenotypic effect of a drug on cells. 
 
-
-Show the two channels + single cell tassellation and  
-
-Show table of attributes
 ![attributes](/IMG/ATTRIBUTES2.png)
+Table 1. The data features or attributes are measured on three deifferent cellular  
 
 
 is used in this prototype to show the heteregeneity of the cellular to two different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
