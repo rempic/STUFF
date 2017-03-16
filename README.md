@@ -30,7 +30,7 @@ I used  to test my software High Content image acquisitions taken with an automa
 ## Software
 the Image Segmentation software prototype was developped in imageJ/Fiji (2.0.0):
 [Voronoi](./Voronoi).
-[UI](./IMG/voronoi_imagej_UI.png)
+![UI](./IMG/voronoi_imagej_UI.png)
 
 
 ## Next
