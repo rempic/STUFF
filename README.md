@@ -28,8 +28,8 @@ I used  to test my software High Content image acquisitions taken with an automa
 
 
 ## Software
-The first prototype of the Image Segmentation was implemented by using imageJ. 
-
+the Image Segmentation software prototype was developped in imageJ. The first prototype of 
+[Voronoi](https://github.com/rempic/voronoi).
 
 
 ## Next
