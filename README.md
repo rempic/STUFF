@@ -10,6 +10,16 @@ This project was diveded in the four sub-projects describe below (the code is ar
 - Image segmentation by voronoi tasselletion  
 - Data/features extraction from  tassellated images
 - Data managment (e.g., storage, clean up , normalization)
+- Classification 
+
+
+## Image segmentation by voronoi tassellation
+
+## Data/features extraction from  tassellated images
+
+## Data managment (e.g., storage, clean up , normalization)
+
+## Machine Learning Classification
 
 
 ## Introduction
