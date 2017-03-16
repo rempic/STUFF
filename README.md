@@ -46,7 +46,9 @@ The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial info
 
 ## Data/features extraction from  tassellated images
 
-The goal of this part of the software is to measure defined features from the tassellated iimage acquisitions. For this prototype of the software I had high-content images four different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
+The goal of this module of the software is to extrat defined data features from the tassellated image acquisitions. For this software prototype I used high-content images of  two different channels related to two molecule of interests acquired from cells under a specific drug treatment. The molecule of interests are DNA and a protein  for which I do not give the name and will call for brevity protein-1. Images of the DNA was used for image segmentation and determien the cellular tassellation (see previous section), and also  to measure features related to nuclear morphology. Protein 1 localizes into the nucleus when activated (phosphorilated) and is used in this prototype of the software to show how important is to include the cellular context, like cell confinement, to quantificatify correctly the phenotypic effect of a drug on cells. 
+
+is used in this prototype to show the heteregeneity of the cellular to two different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
 
 ## Data managment (e.g., storage, clean up , normalization)
 
