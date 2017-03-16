@@ -5,8 +5,11 @@ The goal of this project is to develop  a prototype of an  Integrated image data
 
 For this prototype I  developped i) a  data image analsyis software to measure cell features related to  single cells and to cellular spatial realtionships o (e.d., cell confinement, distance and number of neighbouring cells). Furthermore to increase accurancy of the analysis and reduce noise I classified cells according to their specific spatial and biological status. In particular for this prototype as a proof of concept I determine whether a cells has free cell-cell contact edges and whther is a deviding cell. The cell-cell free edge is an important informa as many molecular signals and cellular biologicla processes are inbibited when cells are confluent and confined. The classification was performed by classical machine learning approaches in particular by using logistic regression and a small neural network (deep learning). Other methods line ... were also tested .
 
-This project was diveded in four sub-projects describe below (the code is aranged in the corresponding four folders): 
+This project was diveded in the four sub-projects describe below (the code is arranged in the corresponding four folders): 
 
+- Image segmentation by voronoi tasselletion  
+- Data/features extraction from  tassellated images
+- Data managment (e.g., storage, clean up , normalization)
 
 
 ## Introduction
