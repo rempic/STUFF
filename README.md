@@ -33,7 +33,7 @@ the Image Voronoi/Segmentation software prototype was developped in imageJ/Fiji 
 ![UI](./IMG/voronoi_imagej_UI.png)
 The Image Voronoi/Segmentation software returns a list of region of interest (ROIS) to be used on the actuired images and measure their content. 
 
-## Next
+## TO DO
 - [ ] to use a randomised algorithm based on a KD-TREE data structure to represent the voroni regions locations
 
 The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial information, e.g., number and location of neighbouring nuclei/cells (voronoi cells) given a specific region/nucleus. "A k-d tree, or k-dimensional tree, is a data structure used for organizing some number of points in a space with k dimensions. It is a binary search tree with other constraints imposed on it. K-d trees are very useful for range and nearest neighbor searches"
