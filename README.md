@@ -18,9 +18,10 @@ This project was diveded in the four sub-projects describe below (the code is ar
 The goal of this part of the project is to divide an image acquisition in cellular unit so that we can calculate the data features for the single cells in the entire cell population. In particularr to determine the cellular units wI used a tassellation voronoi diagram (see picture below) on the cell nuclei.  the voronoi diagram is built from a set of points, called seeds, sites or generators, in this project the seeds are the nuclei centrois and for each seed is determned  a corresponding region consisting of all points closer to that seed than to any other. In other words the  regions of a voronoi diagrma , also called Voronoi cells or tassells , are a measure of how close the seed/nucleus of that region is to its neighbours seeds/nuclei. In terms of biology the single tassels of a voronoi diagram gives a mearumented of he level of cell confinement or contact inhibition, which is know to affect many cellular phenotypic effect: proliferation, apoptosis, cell signaling etc. This type of information might be critical to increase the accurancy for example of a drug or genetic screen which has as readout for example the cell proliferation. 
 
 
-The advantage of using this spefic tassellation algorithm is also given by the 
-For image segmentation I used High-content  
 ![Screenshot](IMG/HCI_example2.png)
+I used  to test my software High Content image acquisitions taken with a confocal microscope at 20x magnification and    from cells plated in 96wells under various drug treatment and genetic alterations. The image above show the acquistion of nuclei used for calcualting the voronoi diagram.
+
+
 
 ## Data/features extraction from  tassellated images
 
