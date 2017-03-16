@@ -52,8 +52,7 @@ The goal of this module is to extrat from the tassellated image acquisitions the
 
 Table 1. The data features or attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. 
 
-The  attribute name consists of tree sections: cell region, image channel and the measured feature name. Therfore each channel will have its own set of attribute. Each channel has 32 measured attributes therfore if I use two channels image acquisitions I will have in total 64 attributes.
-
+The  attribute name consists of tree sections: cell region, image channel and the measured feature name. Therefore each channel will have its own set of attributes. Therefore each channel fron an acquired imagewil has in total 32 measured attributes.
 
 
 
