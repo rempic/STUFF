@@ -15,18 +15,16 @@ This project was diveded in the four sub-projects describe below (the code is ar
 
 ## Image segmentation by voronoi tassellation
 
+![Screenshot](IMG/HCI_example2.png)
+
 ## Data/features extraction from  tassellated images
 
 ## Data managment (e.g., storage, clean up , normalization)
 
 ## Machine Learning Classification
 
+## Data Analyis
 
-## Introduction
-
-(Why is important? What is new?)
-
-The 
 
 ## Image data analysis
 
@@ -37,7 +35,7 @@ For my toy project I will use high content images acquisition of cells labelled 
 1. Image acquisition, preparation (change name), remove background, etc.... To use images from High content acquisition fo whole slide.
    For the whole slide acquisition I will use OpenSlide library to devide a big acquired area in tails at different magnification.
    
-![Screenshot](IMG/HCI_example2.png)
+
 
 2. Image segmentation to measure the features related to single cells and and multiple cells in different contexts (mitotic cells, cells at the edge, intercellular distance, cellur compaction, neighbouring cells, etc...). I use tassellation of the entire cell population from nuclear segmentation. I use a KD-tree data structure to have an efficient retrieval (log) and spatial retivial of the  the segmented tassellation (voronoi diagram)  
 
