@@ -1,16 +1,28 @@
-# A machine learning platform for drug and genetic phenotypic screen
+# An Integrated Image data Analysis and Machine Learning approach for high-throughput drug and genetic phenotypic screen
 
-Why is importatnt ?
+## Goal
+The goal of this project is to develop  a toy  Integrated image data analysis and machine learning  software/approach for high-throughput drug and genetic phenotypic screen. high-throughput phenotypic screening also called  high-content analysis (HCA) or cellomics, is a used in biological research and drug discovery to identify substances such as small molecules, peptides, or RNAi that alter the phenotype of a cell in a desired manner. Give a simple example 
 
-What is new?
 
-HOW TO DO IT?
 
+
+## Introduction
+
+(Why is important? What is new?)
+
+The 
+
+## Image data analysis
+
+high-content analysis (HCA) or cellomics, is a used in biological research and drug discovery to identify substances such as small molecules, peptides, or RNAi that alter the phenotype of a cell in a desired manner. In particular cells are first exposed to  the substance  and after a period of time, structures and molecular components of the cells are analyzed. The most common analysis involves labeling proteins with fluorescent tags, and finally changes in cell phenotype are measured using automated image analysis. Through the use of fluorescent tags, it is possible to measure in parallel several different cell components and cellular changes at a subcellular level (e.g., cytoplasm vs. nucleus vs. other organelles). Therefore a large number of data points can be collected per cell. In addition to fluorescent labeling, various label free assays have been used in high content screening
+
+
+For my toy project I will use high content images acquisition of cells labelled with DNA and other protein markers.  
 1. Image acquisition, preparation (change name), remove background, etc.... To use images from High content acquisition fo whole slide.
    For the whole slide acquisition I will use OpenSlide library to devide a big acquired area in tails at different magnification.
    
-   for this section I will just add a picture of the entire HCI divided in tiles
-   
+![Screenshot](IMG/HCI_example2.png)
+
 2. Image segmentation to measure the features related to single cells and and multiple cells in different contexts (mitotic cells, cells at the edge, intercellular distance, cellur compaction, neighbouring cells, etc...). I use tassellation of the entire cell population from nuclear segmentation. I use a KD-tree data structure to have an efficient retrieval (log) and spatial retivial of the  the segmented tassellation (voronoi diagram)  
 
 3. measurement of the features , the number of features will be measured from single segmented tassell and contained nuclear segmentation. the data are stored in an SQL database. The feature calculated for a single tassel are:
@@ -50,6 +62,6 @@ Cellular nuclear marker are widely used to identify ... (show picture)
 
 
 
-![Screenshot](IMG/HCI_example2.png)
+
 
 plot((1:100))
