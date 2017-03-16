@@ -3,7 +3,12 @@
 ## Goal
 The goal of this project is to develop  a prototype of an  Integrated image data analysis and machine learning  software/approach for high-throughput drug and genetic phenotypic screen. high-throughput phenotypic screening also called  high-content analysis (HCA) or cellomics, is a used in biological research and drug discovery to identify substances such as small molecules, peptides, or RNAi that alter the phenotype of a cell in a desired manner. The most common analysis involves first the labeling proteins with fluorescent tags, then  the acquisition of spatial and temporal  information by an automated microscope, and finally the measurement and analysis of the changes in cell phenotype   using an automated image analysis software. Through the use of fluorescent tags, it is possible to measure in parallel a wide range of cell components and  changes at a subcellular level 
 
-In this project I have developped a data image analsyis to measure spatial realtionship of singles cells (e.d., cell confinement, distance and number of neighbouring cells) using on combinatorial geometry approach (tasselation by voronoi diagram) and to determine   context based spatial correlation  automated analysis of HCA images I am including a of  While this is a powerful tool for drug discovery In this project I have  integrate a
+For this prototype I  developped i) a  data image analsyis software to measure cell features related to  single cells and to cellular spatial realtionships o (e.d., cell confinement, distance and number of neighbouring cells). Furthermore to increase accurancy of the analysis and reduce noise I classified cells according to their specific spatial and biological status. In particular for this prototype as a proof of concept I determine whether a cells has free cell-cell contact edges and whther is a deviding cell. The classification was performed by using logistic regression and a small neural network (deep learning).
+
+
+cellular classification  status of and to reduce noise I used machine learning  methods to classify various cellular states. As a proof of concepts I performed classification of border and dividing cells 
+
+and   a Then to determine a cellular classification i by using a combinatorial geometry approach (i.e., voronoi tasselation) and ii) to determine   context based spatial correlation  automated analysis of HCA images I am including a of  While this is a powerful tool for drug discovery In this project I have  integrate a
 
 
 
