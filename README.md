@@ -1,12 +1,12 @@
 # An Integrated Image data Analysis and Machine Learning approach for high-throughput drug and genetic phenotypic screening
 
 ## Goal
-The goal of this project is to develop  a toy  Integrated image data analysis and machine learning  software/approach for high-throughput drug and genetic phenotypic screen. high-throughput phenotypic screening also called  high-content analysis (HCA) or cellomics, is a used in biological research and drug discovery to identify substances such as small molecules, peptides, or RNAi that alter the phenotype of a cell in a desired manner. A standard HCA includes three main phases image acquisition, automated image analysis and  In particular cells are first exposed to  the substances of study  and after a period of time, structures and molecular components of the cells are analyzed. The most common analysis involves first the labeling proteins with fluorescent tags, then  the acquisition of spatial and temporal  information by an automated microscope, and finally the measurement and analysis of the changes in cell phenotype   using an automated image analysis software. Through the use of fluorescent tags, it is possible to measure in parallel several different cell components and cellular changes at a subcellular level (e.g., cytoplasm vs. nucleus vs. other organelles). Therefore a large number of data points can be collected per cell. 
+The goal of this project is to develop  a prototype of an  Integrated image data analysis and machine learning  software/approach for high-throughput drug and genetic phenotypic screen. high-throughput phenotypic screening also called  high-content analysis (HCA) or cellomics, is a used in biological research and drug discovery to identify substances such as small molecules, peptides, or RNAi that alter the phenotype of a cell in a desired manner. The most common analysis involves first the labeling proteins with fluorescent tags, then  the acquisition of spatial and temporal  information by an automated microscope, and finally the measurement and analysis of the changes in cell phenotype   using an automated image analysis software. Through the use of fluorescent tags, it is possible to measure in parallel a wide range of cell components and  changes at a subcellular level 
 
-In htis project in addition to the automated analysis of HCA images I am including a of  While this is a powerful tool for drug discovery In this project I have  integrate a
+In this project in addition to the santard automated analysis of HCA images I am including a of  While this is a powerful tool for drug discovery In this project I have  integrate a
 
 
-“High-content” or visual biology technology has two purposes, first to acquire spatially or temporally resolved information on an event and second to automatically quantify it. Spatially resolved instruments are typically automated microscopes, and temporal resolution still requires some form of fluorescence measurement in most cases.
+
 
 ## Introduction
 
