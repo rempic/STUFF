@@ -46,6 +46,8 @@ The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial info
 
 ## Data/features extraction from  tassellated images
 
+The goal of this part of the software is to measure defined features from the tassellated iimage acquisitions. For this prototype of the software I had high-content images four different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
+
 ## Data managment (e.g., storage, clean up , normalization)
 
 ## Machine Learning Classification
