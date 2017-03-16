@@ -1,17 +1,9 @@
-// INPUT: image with nuclei stained 
-// output segmentation of voronoi areas
+//////////////////////////////////////////
+// Remigio Picone, PhD
+// 
+// 06 Jan 2017
+//////////////////////////////////////////
 
-// TODO ------------------
-// input: folder from where to open files one by one for calculating the voronoi areas
-// input: indentifier of files to open 
-// input: folder output
-// 
-// 1. open the image 
-// 2. delete all rois in the roimanager if full 
-// 3. set up batch mode
-// 
-//------------------------
-// filtering 
 var IN_TEST_RADIOUS = false;
 var LOG_DEBUG 	= 0;
 
@@ -35,7 +27,7 @@ macro "2 VORONOI [F1]"{
 	Dialog.addMessage("FILTER");
 	Dialog.addNumber("Minimum Filter radious", IN_MIN_FILT_RADIOUS);
 	Dialog.addString("Thresholding method (e.g., Otsu, Yen, etc..)", IN_THRESH_METHOD, 50);
-	Dialog.addCheckbox("TEST the radious", IN_TEST_RADIOUS);
+	Dialog.addCheckbox("TEST the radious", false);
 	
 	Dialog.addString("Folder Output", sDIR_OUT, 80);
 	
@@ -110,22 +102,19 @@ macro "2 VORONOI [F1]"{
 function MAIN(sFileImage){
 
 
-	// clear the ROI manager
-	//if(IN_TEST_RADIOUS==false)
-	ROI_CLEAR();
+		ROI_CLEAR();
 	
 	//run("Median...", "radius=3");
-	 // minimum filter is good for watershed becasue it reduces the shape isotropically 
-	 // I normally use IN_MIN_FILT_RADIOUS between 3 and 15
+	// minimum filter is good for watershed becasue it reduces the shape isotropically 
+	// I normally use IN_MIN_FILT_RADIOUS between 3 and 15
 	run("Gaussian Blur...", "sigma=2");
 	run("Minimum...", "radius="+IN_MIN_FILT_RADIOUS);
+
 	// auto segmentation of nuclei
-	//setAutoThreshold("Mean dark");
 	setAutoThreshold(IN_THRESH_METHOD + " dark");
 	setOption("BlackBackground", false);
 	run("Convert to Mask");
-	//run("Convert to Mask", "method=RenyiEntropy background=Dark calculate");
-
+	
 	run("Fill Holes");
 	
 	// watershed to split touching nuclei
@@ -217,9 +206,9 @@ function SaveinfoToFile(){
 	s="";
 	s = s + sDIR_IN + "\n";
 	s = s + sFILE_ID + "\n";
+	s = s + IN_THRESH_METHOD + "\n";
 	s = s + IN_MIN_FILT_RADIOUS + "\n";
 	s = s + IN_TEST_RADIOUS + "\n";
-	s = s + IN_THRESH_METHOD + "\n";
 	s = s + sDIR_OUT + "\n";
 	
 
