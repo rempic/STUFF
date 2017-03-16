@@ -52,7 +52,7 @@ The goal of this module of the software is to extrat defined data features from 
 Show the two channels + single cell tassellation and  
 
 Show table of attributes
-![kd-tree](/IMG/ATTRIBUTES.png)
+![attributes](/IMG/ATTRIBUTES2.png)
 
 
 is used in this prototype to show the heteregeneity of the cellular to two different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
