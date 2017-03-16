@@ -52,11 +52,25 @@ The goal of this module is to extrat from the tassellated image acquisitions the
 
 Table 1. The data features or attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. 
 
-The  attribute name consists of tree sections: cell region, image channel and the measured feature name. Therefore each channel will have its own set of attributes. Therefore each channel fron an acquired imagewil has in total 32 measured attributes.
+The  attribute name consists of tree sections: cell region, image channel and the measured features name. Therefore each channel from an acquired image will have its own set of 32 attributes shown in Table-1.
 
+## Software
 
+add the data software ...
 
-is used in this prototype to show the heteregeneity of the cellular to two different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
+Batch measurement
+
+The nuber of channel that can be mearured
+
+the output is a table tab separated
+
+I used imageJ. to load the data 
+
+## To do 
+
+the extraction of the features is performed in batch and for an high number of feature can take time
+The software can parallelized because the data extraction 
+Is a server infrastructure is available it can me redevelopped in python and used Spark for 
 
 ## Data managment (e.g., storage, clean up , normalization)
 
