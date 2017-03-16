@@ -52,7 +52,9 @@ The goal of this module is to extrat from the tassellated image acquisitions the
 
 Table 1. The data features or attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. 
 
-The attributes name are devided in three parts: data object oriented 
+The  attribute name consists of tree sections: cell region, image channel and the measured feature name. Therfore each channel will have its own set of attribute. Each channel has 32 measured attributes therfore if I use two channels image acquisitions I will have in total 64 attributes.
+
+
 
 
 is used in this prototype to show the heteregeneity of the cellular to two different proteins that show nuclear localization when activated (phosphorilated) from  cells under a specific molecular alteration . In this description I don't give names the proteins and the molecular modification related to the images shown. For brevity I call the protein Protein 1,2,3 and 4. 
