@@ -19,7 +19,16 @@ The goal of this part of the project is to divide an image acquisition in cellul
 
 
 ![Screenshot](IMG/HCI_example2.png)
-I used  to test my software High Content image acquisitions taken with a confocal microscope at 20x magnification and    from cells plated in 96wells under various drug treatment and genetic alterations. The image above show the acquistion of nuclei used for calcualting the voronoi diagram.
+I used  to test my software High Content image acquisitions taken with an automated confocal microscope at 20x magnification from Human cells plated in 96wells under various drug treatment and genetic alterations. The image above show the acquistion of nuclei used for calcualting the voronoi diagram. The acquistion covers a total area of about 3x3mm from a single well. 
+
+
+Show the voronoi diagram, enfisize the cell confinement
+
+
+
+The woronoi regions where stored in series of randomized Kd-tree data structure to allow the calculation of the number and location of neighbouring nuclei/cells for a specific nucleus
+
+
 
 
 
