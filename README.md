@@ -24,12 +24,13 @@ I used  to test my software High Content image acquisitions taken with an automa
 
 
 ![Screenshot](/IMG/voronoi_5.png)
-**Figure 2**
-Show the voronoi diagram, enfisize the cell confinement
+**Figure 2** Voronoi diagram on an entire High content image acquisiton. More or less confined of regions of the images are hightlited. 
 
 
 
-The woronoi regions where stored in series of randomized Kd-tree data structure to allow the calculation of the number and location of neighbouring nuclei/cells for a specific nucleus
+**Future implementation**: to use a Kd-tree data structure to determine  number and location of neighbouring nuclei/cells (voronoi cells) given a specific nucleus. "A k-d tree, or k-dimensional tree, is a data structure used in computer science for organizing some number of points in a space with k dimensions. It is a binary search tree with other constraints imposed on it. K-d trees are very useful for range and nearest neighbor searches"
+![Screenshot](/IMG/kd_tree.png)
+
 
 
 
