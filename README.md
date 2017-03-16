@@ -29,7 +29,7 @@ I used  to test my software High Content image acquisitions taken with an automa
 
 ## Software
 the Image Segmentation software prototype was developped in imageJ. The first prototype of 
-[Voronoi](https://github.com/rempic/voronoi).
+[Voronoi](./Voronoi).
 
 
 ## Next
