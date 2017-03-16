@@ -27,8 +27,10 @@ I used  to test my software High Content image acquisitions taken with an automa
 **Figure 2** Voronoi diagram on an entire High content image acquisiton. More or less confined of regions of the images are hightlited. 
 
 
+## Software
 
-**Future implementation**: to use a Kd-tree data structure to determine  number and location of neighbouring nuclei/cells (voronoi cells) given a specific nucleus. "A k-d tree, or k-dimensional tree, is a data structure used in computer science for organizing some number of points in a space with k dimensions. It is a binary search tree with other constraints imposed on it. K-d trees are very useful for range and nearest neighbor searches"
+
+**Next to do**: to use a randomised algorithm based on a Kd-tree data structure (O(k log n)) to represent the voroni regions locations. this data structure  allows efficient calculation of spatial information, e.g., number and location of neighbouring nuclei/cells (voronoi cells) given a specific region/nucleus. "A k-d tree, or k-dimensional tree, is a data structure used for organizing some number of points in a space with k dimensions. It is a binary search tree with other constraints imposed on it. K-d trees are very useful for range and nearest neighbor searches"
 ![Screenshot](/IMG/kd_tree.png)
 
 
