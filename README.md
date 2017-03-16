@@ -28,10 +28,10 @@ I used  to test my software High Content image acquisitions taken with an automa
 
 
 ## Software
-the Image Segmentation software prototype was developped in imageJ/Fiji (2.0.0):
+the Image Voronoi/Segmentation software prototype was developped in imageJ/Fiji (2.0.0):
 [Voronoi](./Voronoi).
 ![UI](./IMG/voronoi_imagej_UI.png)
-
+The Image Voronoi/Segmentation software returns a list of region of interest (ROIS) to be used on the actuired images and measure their content. 
 
 ## Next
 - [ ] to use a randomised algorithm based on a KD-TREE data structure to represent the voroni regions locations
