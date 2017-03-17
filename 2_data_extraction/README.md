@@ -1,25 +1,21 @@
-## Image segmentation by voronoi tassellation
+## Data/features extraction from  tassellated images
 
-The goal of this part of the project is to segment an image acquisition (Figure 1) in cellular units so that we can calculate the data features for the single cells in the entire cell population. In particularr to determine the cellular units I used a voronoi diagram (Figure 2) on the cell nuclei.  the voronoi diagram is built from a set of points, called seeds, sites or generators, in this project the seeds are the nuclei centrois and for each seed is determned  a corresponding region consisting of all points closer to that seed than to any other. In other words the  regions of a voronoi diagrma , also called Voronoi cells or tassells , are a measure of how close the seed/nucleus of that region is to its neighbours seeds/nuclei. In terms of biology the single tassels of a voronoi diagram gives a mearumented of he level of cell confinement or contact inhibition, which is know to affect many cellular phenotypic effect: proliferation, apoptosis, cell signaling etc. This type of information might be critical to increase the accurancy for example of a drug or genetic screen which has as readout for example the cell proliferation. 
+The goal of this module is to extract from the segmented image acquisitions the data features for the statistical analysis and the classification module (see machine learning). Below is shown the the list of measured attributes. The data attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. The  attribute name consits of tree sections: cell region, image channel and the measured features name.  Each channel from an acquired image will have set of 32 attributes. In the table below the attributes refers to the DNA channels. The software can measure attrbutes from four differnet channels at once.
+
+![attributes](/IMG/ATTRIBUTE2.png)
+
+Table 1.  
 
 
-![Screenshot](IMG/HCI_example2.png)
-**Figure 1**
-I used  to test my software High Content image acquisitions taken with an automated confocal microscope at 20x magnification from Human cells plated in 96wells under various drug treatment and genetic alterations. The image above show the acquistion of nuclei used for calcualting the voronoi diagram. The acquistion covers a total area of about 3x3mm from a single well. 
 
 
-![Screenshot](/IMG/voronoi_5.png)
-**Figure 2** Voronoi diagram on an entire High content image acquisiton. More or less confined of regions of the images are hightlited. 
-
+For this  software prototype I used a two channels (two colours) high-content image acquisitions of two molecule of interests: DNA and a protein which I call protein-1. the DNA channel was used for cell segmentation the voronoi diagram (see  previous section), and to measure features related to nuclear morphology and other information (see machine learning section). I choose the Protein-1 because it localizes into the nucleus when is  active (phosphorilation) and therfore is a good example of the drug screen phenotypic readout.  used in this prototype of the software to show teh importance of  including data about the cellular context, e,g, cell confinement, to accuratly  quantificatify the phenotypic effect of a drug on cells. 
 
 ## Software
-the Image Voronoi/Segmentation software prototype was developped in imageJ/Fiji (2.0.0):
-[Voronoi](./Voronoi).
-![UI](/IMG/voronoi_imagej_UI.png)
-The Image Voronoi/Segmentation software returns a list of region of interest (ROIS) to be used on the actuired images and measure their content. 
 
-## TO DO
-- [ ] to use a randomised algorithm based on a KD-TREE data structure to represent the voroni regions locations
+The software for the measurement of the attributes from the segmented images operates in batch mode. It takes in input the folder where the images are stored and writes in output the data in a single excel file. The user needs to specifies in input also i) the file identificators (file name substrings) refering to the different channels of the images acquisitions, ii) the file indicator of the voronoi rois and optional information about the experiment (experiment ID and experimental conditions). Optionally the user can also specify the pixel intensity to for background subtraction from a single channel image.
 
-The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial information, e.g., number and location of neighbouring nuclei/cells (voronoi cells) given a specific region/nucleus. "A k-d tree, or k-dimensional tree, is a data structure used for organizing some number of points in a space with k dimensions. It is a binary search tree with other constraints imposed on it. K-d trees are very useful for range and nearest neighbor searches"
-![kd-tree](/IMG/kd_tree.png)
+The software  for the measurement of the attributes from the segmented images  was developped in imageJ/Fiji (2.0.0):
+[data](./data).
+
+![UI](./IMG/DATAUI.png)
