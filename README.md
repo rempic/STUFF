@@ -8,8 +8,8 @@ For this prototype I  developped i) a  data image analsyis software to measure c
 This project was diveded in the four sub-projects describe below (the code is arranged in the corresponding four folders): 
 
 - [Image segmentation by voronoi tasselletion](/Voronoi/README.md) 
-- Data/features extraction from  tassellated images
-- Data managment (e.g., storage, clean up , normalization)
+- [Data/features extraction from  tassellated images](/2_data_extraction/README.md)
+- [Data cleaning](https://cdn.rawgit.com/rempic/TEST_GIT/v1/DATA_CLEANING/data_cleaning.html)
 - Classification 
 
 
