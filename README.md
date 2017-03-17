@@ -46,7 +46,7 @@ The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial info
 
 ## Data/features extraction from  tassellated images
 
-The goal of this module is to extract from the segmented image acquisitions the data features for the statistical analysis and the classification module (see machine learning). Below is shown the the list of measured attributes. The data attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. The  attribute name consits of tree sections: cell region, image channel and the measured features name.  Each channel from an acquired image will have set of 32 attributes. In the table below the attributes refers to the DNA channels.
+The goal of this module is to extract from the segmented image acquisitions the data features for the statistical analysis and the classification module (see machine learning). Below is shown the the list of measured attributes. The data attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. The  attribute name consits of tree sections: cell region, image channel and the measured features name.  Each channel from an acquired image will have set of 32 attributes. In the table below the attributes refers to the DNA channels. The software can measure attrbutes from four differnet channels at once.
 
 ![attributes](/IMG/ATTRIBUTE2.png)
 
@@ -66,22 +66,6 @@ The software  for the measurement of the attributes from the segmented images  w
 
 ![UI](./IMG/DATAUI.png)
 
-
-
-
-Batch measurement
-
-The nuber of channel that can be mearured
-
-the output is a table tab separated
-
-I used imageJ. to load the data 
-
-## To do 
-
-the extraction of the features is performed in batch and for an high number of feature can take time
-The software can parallelized because the data extraction 
-Is a server infrastructure is available it can me redevelopped in python and used Spark for 
 
 ## Data Cleaning (e.g., storage, clean up , normalization)
 
