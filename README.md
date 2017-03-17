@@ -67,11 +67,14 @@ The software  for the measurement of the attributes from the segmented images  w
 ![UI](./IMG/DATAUI.png)
 
 
-## Data Cleaning (e.g., storage, clean up , normalization)
+## Data Cleaning: TECHNICAL and CONSISTENCY corrections of the data
 
-Before doing any analsis or classification data are cleaned and validated. This part is written in R environemen and 
-consits of a single code that take in 
+The raw data obtained from the data features/attributes extraction are cleaned and corrected. For the data cleaning and correction of teh data I use R environemen. find the code [data cleaning](./DATA_CLEANING).
 
+See the markdown of the data cleaning 
+
+
+[Data Cleaning](https://cdn.rawgit.com/rempic/TEST_GIT/v1/DATA_CLEANING/data_cleaning.html)
 
 ## Machine Learning Classification
 
