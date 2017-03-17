@@ -59,13 +59,14 @@ For this  software prototype I used a two channels (two colours) high-content im
 
 ## Software
 
-The software for the measurement of the attributes from the segmented images operates in batch mode. It takes in input the folder where the images are stored and writes in output the data in a single excel file. The user needs to specifies in input also i) the file identificators (file name substrings) refering to the different channels of the images acquisitions, ii) the file indicator of the voronoi rois and optional information about the experiment (experiment ID and experimental conditions). Optionally the user can also specify the pixel intensity to for background subtraction from a single channel image
+The software for the measurement of the attributes from the segmented images operates in batch mode. It takes in input the folder where the images are stored and writes in output the data in a single excel file. The user needs to specifies in input also i) the file identificators (file name substrings) refering to the different channels of the images acquisitions, ii) the file indicator of the voronoi rois and optional information about the experiment (experiment ID and experimental conditions). Optionally the user can also specify the pixel intensity to for background subtraction from a single channel image.
 
+The software  for the measurement of the attributes from the segmented images  was developped in imageJ/Fiji (2.0.0):
+[data](./data).
 
 ![UI](./IMG/DATAUI.png)
 
-The software  for the measurement of the attributes from the segmented images  was developped in imageJ/Fiji (2.0.0):
-[Voronoi](./data).
+
 
 
 Batch measurement
