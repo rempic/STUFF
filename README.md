@@ -46,13 +46,13 @@ The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial info
 
 ## Data/features extraction from  tassellated images
 
-The goal of this module is to extract from the segmented image acquisitions the data features for the statistical analysis and the classification module (see machine learning). Below is shown the the list of measured features/attributes. 
+The goal of this module is to extract from the segmented image acquisitions the data features for the statistical analysis and the classification module (see machine learning). Below is shown the the list of measured attributes. The data attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. The  attribute name consits of tree sections: cell region, image channel and the measured features name.  Each channel from an acquired image will have set of 32 attributes. In the table below the attributes refers to the DNA channels.
 
 ![attributes](/IMG/ATTRIBUTE2.png)
 
-Table 1. The data features or attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. 
+Table 1.  
 
-The  attribute name consists of tree sections: cell region, image channel and the measured features name. Therefore each channel from an acquired image will have its own set of 32 attributes shown in Table-1.
+
 
 
 For this  software prototype I used a two channels (two colours) high-content image acquisitions of two molecule of interests: DNA and a protein which I call protein-1. the DNA channel was used for cell segmentation the voronoi diagram (see  previous section), and to measure features related to nuclear morphology and other information (see machine learning section). I choose the Protein-1 because it localizes into the nucleus when is  active (phosphorilation) and therfore is a good example of the drug screen phenotypic readout.  used in this prototype of the software to show teh importance of  including data about the cellular context, e,g, cell confinement, to accuratly  quantificatify the phenotypic effect of a drug on cells. 
