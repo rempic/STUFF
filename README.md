@@ -46,13 +46,16 @@ The KD-TREE structure  allows efficient calculation (O(k log n)) of spatial info
 
 ## Data/features extraction from  tassellated images
 
-The goal of this module is to extrat from the tassellated image acquisitions the data features which will be used for the classification module (see machine learning) and for the final statistical analysis. The list of the features/attributes measured is shown below (table 1). For this  software prototype I used a two channels (two colours) high-content image acquisitions of two molecule of interests: DNA and a protein which I call protein-1. the DNA channel was used for cell segmentation the voronoi diagram (see  previous section), and to measure features related to nuclear morphology and other information (see machine learning section). I choose the Protein-1 because it localizes into the nucleus when is  active (phosphorilation) and therfore is a good example of the drug screen phenotypic readout.  used in this prototype of the software to show teh importance of  including data about the cellular context, e,g, cell confinement, to accuratly  quantificatify the phenotypic effect of a drug on cells. 
+The goal of this module is to extract from the segmented image acquisitions the data features for the statistical analysis and the classification module (see machine learning). Below is shown the the list of measured features/attributes. 
 
 ![attributes](/IMG/ATTRIBUTE2.png)
 
 Table 1. The data features or attributes are measured on three deifferent cellular region: nucleus, voronoi cell and voronoi cell excluded of the nuclear region. 
 
 The  attribute name consists of tree sections: cell region, image channel and the measured features name. Therefore each channel from an acquired image will have its own set of 32 attributes shown in Table-1.
+
+
+For this  software prototype I used a two channels (two colours) high-content image acquisitions of two molecule of interests: DNA and a protein which I call protein-1. the DNA channel was used for cell segmentation the voronoi diagram (see  previous section), and to measure features related to nuclear morphology and other information (see machine learning section). I choose the Protein-1 because it localizes into the nucleus when is  active (phosphorilation) and therfore is a good example of the drug screen phenotypic readout.  used in this prototype of the software to show teh importance of  including data about the cellular context, e,g, cell confinement, to accuratly  quantificatify the phenotypic effect of a drug on cells. 
 
 ## Software
 
@@ -72,9 +75,16 @@ the extraction of the features is performed in batch and for an high number of f
 The software can parallelized because the data extraction 
 Is a server infrastructure is available it can me redevelopped in python and used Spark for 
 
-## Data managment (e.g., storage, clean up , normalization)
+## Data Cleaning (e.g., storage, clean up , normalization)
+
+Before doing any analsis or classification data are cleaned and validated. This part is written in R environemen and 
+consits of a single code that take in 
+
 
 ## Machine Learning Classification
+
+
+
 
 ## Data Analyis
 
