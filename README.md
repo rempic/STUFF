@@ -12,6 +12,7 @@ This project was diveded in the four sub-projects describe below (the code is ar
 - [Data cleaning](https://cdn.rawgit.com/rempic/TEST_GIT/v1/DATA_CLEANING/data_cleaning.html)
 - Classification 
 
+[workflow](/IMG/workflow.png)
 
 TODO
 - add a picture of cells with a signal which depends on cell-cell contact inhibiton 
