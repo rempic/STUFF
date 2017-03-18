@@ -9,7 +9,7 @@ This project was diveded in the four sub-projects describe below (the code is ar
 
 - [Image segmentation by tasselletion](/1_voronoi_segmentation/) 
 - [Data extraction](/2_data_extraction/README.md)
-- [Data managment](https://cdn.rawgit.com/rempic/TEST_GIT/v1/DATA_CLEANING/data_cleaning.html)
+- [Data managment](/3_data_cleaning/README.md)
 - Machine learning classification 
 
 ![workflow](/IMG/workflow.png)
